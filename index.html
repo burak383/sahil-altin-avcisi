@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sahil Altın Avcısı Destek</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+:root {
+  --bg: #f6f8f7; --surface: #ffffff; --fg: #1d2a2e; --muted: #5b6b70;
+  --accent: #0f6b7a; --line: #d9e2e1; --gold: #b7861c;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "Source Sans 3", "Segoe UI", Roboto, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #10181a; --surface: #172225; --fg: #e3ecea; --muted: #9fb1b3;
+  --accent: #5ec2cf; --line: #26363a; --gold: #e0b44f; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #10181a; --surface: #172225; --fg: #e3ecea; --muted: #9fb1b3;
+  --accent: #5ec2cf; --line: #26363a; --gold: #e0b44f; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 17px/1.65 var(--body); margin: 0; }
+.wrap { max-width: 44rem; margin: 0 auto; padding: 40px 16px 64px; }
+header { display: grid; gap: 6px; border-bottom: 1px solid var(--line); padding-bottom: 20px; }
+.eyebrow { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+h1 { font-family: var(--display); font-size: clamp(28px, 6vw, 40px); line-height: 1.15; margin: 0; text-wrap: balance; }
+.meta { color: var(--muted); font-size: 15px; }
+h2 { font-family: var(--display); font-size: 22px; margin: 32px 0 6px; text-wrap: balance; }
+p, li { max-width: 65ch; }
+.contact { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; margin: 12px 0; }
+.contact a { font-weight: 600; font-size: 18px; word-break: break-all; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; margin: 8px 0; }
+summary { font-weight: 600; cursor: pointer; }
+a { color: var(--accent); }
+footer { margin-top: 40px; color: var(--muted); font-size: 15px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Mobil oyun · Android · iOS</div>
+    <h1>Sahil Altın Avcısı Destek</h1>
+    <div class="meta">Geliştirici: Burak383</div>
+  </header>
+
+  <h2>Bize ulaşın · Contact us</h2>
+  <p>Hata bildirimi, satın alma sorunu ya da öneri için e-posta gönderin. Mesajınıza telefon modelinizi ve oyun sürümünü (başlık ekranının sağ altında) eklerseniz daha hızlı yardımcı olabiliriz.</p>
+  <p lang="en">For bug reports, purchase issues or suggestions, send us an email. Including your phone model and the game version (bottom right of the title screen) helps us respond faster.</p>
+  <div class="contact"><a href="mailto:seolen8@gmail.com">seolen8@gmail.com</a></div>
+
+  <h2>Sık sorulanlar</h2>
+  <details>
+    <summary>Satın aldığım paket hesabıma eklenmedi</summary>
+    <p>Oyunu tamamen kapatıp yeniden açın; yarım kalan satın almalar oyun açılırken otomatik olarak eklenir. Sorun devam ederse sipariş numaranızla (Google Play veya App Store makbuzunda yazar) bize yazın.</p>
+  </details>
+  <details>
+    <summary>İlerlemem başka telefona taşınır mı?</summary>
+    <p>Şu an ilerleme yalnızca oyunu oynadığınız telefonda saklanır. Oyunu silerseniz veya telefon değiştirirseniz ilerleme kaybolur.</p>
+  </details>
+  <details>
+    <summary>Oyunda ne zaman reklam çıkar?</summary>
+    <p>Ödül veren reklamları (ör. 2x değer, hızlı kazı) yalnızca siz isterseniz izlersiniz. Bunun dışında her üç sahil yolculuğunda bir kez kısa bir ara reklam gösterilir.</p>
+  </details>
+  <details>
+    <summary>Ses ve titreşimi kapatabilir miyim?</summary>
+    <p>Evet. Başlık ekranında veya oyun içinde Ayarlar düğmesinden ses, titreşim ve grafik kalitesini değiştirebilirsiniz.</p>
+  </details>
+
+  <h2 lang="en">FAQ</h2>
+  <details lang="en">
+    <summary>My purchase was not added</summary>
+    <p>Close the game completely and reopen it; pending purchases are restored automatically on launch. If the problem continues, email us with your order number from the Google Play or App Store receipt.</p>
+  </details>
+  <details lang="en">
+    <summary>Can I move my progress to another phone?</summary>
+    <p>Progress is currently stored only on the device you play on. Uninstalling the game or switching phones will reset it.</p>
+  </details>
+  <details lang="en">
+    <summary>When do ads appear?</summary>
+    <p>Reward ads (e.g. 2x value, fast dig) play only when you choose to watch them. Apart from that, a short interstitial ad is shown once every three beach trips.</p>
+  </details>
+
+  <footer>
+    <a href="gizlilik.html">Gizlilik Politikası · Privacy Policy</a>
+  </footer>
+</div>
+</body>
+</html>

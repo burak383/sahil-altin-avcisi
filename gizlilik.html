@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sahil Altın Avcısı Gizlilik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Düzen: tek sütun belge; üstte kısa künye, dil sekmeleri, numarasız bölümler */
+:root {
+  --bg: #f6f8f7; --surface: #ffffff; --fg: #1d2a2e; --muted: #5b6b70;
+  --accent: #0f6b7a; --line: #d9e2e1; --gold: #b7861c;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "Source Sans 3", "Segoe UI", Roboto, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #10181a; --surface: #172225; --fg: #e3ecea; --muted: #9fb1b3;
+  --accent: #5ec2cf; --line: #26363a; --gold: #e0b44f; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #10181a; --surface: #172225; --fg: #e3ecea; --muted: #9fb1b3;
+  --accent: #5ec2cf; --line: #26363a; --gold: #e0b44f; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 17px/1.65 var(--body); }
+.wrap { max-width: 44rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 64px; }
+header { display: grid; gap: 6px; border-bottom: 1px solid var(--line); padding-bottom: 20px; }
+.eyebrow { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+h1 { font-family: var(--display); font-size: clamp(28px, 6vw, 40px); line-height: 1.15; margin: 0; text-wrap: balance; }
+.meta { color: var(--muted); font-size: 15px; }
+.tabs { display: flex; gap: 8px; margin: 24px 0 8px; flex-wrap: wrap; }
+.tabs button { font: 600 15px var(--body); padding: 8px 16px; border-radius: 999px; border: 1px solid var(--line);
+  background: var(--surface); color: var(--fg); cursor: pointer; }
+.tabs button[aria-selected="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.tabs button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+h2 { font-family: var(--display); font-size: 22px; margin: 32px 0 6px; text-wrap: balance; }
+p, li { max-width: 65ch; }
+ul { padding-left: 1.2em; display: grid; gap: 4px; }
+.table-wrap { overflow-x: auto; margin: 12px 0; }
+table { border-collapse: collapse; width: 100%; min-width: 480px; font-size: 15px; background: var(--surface); }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; font-size: 13px; letter-spacing: .05em; text-transform: uppercase; }
+.contact { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.contact code { font-size: 15px; user-select: all; }
+a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Mobil oyun · Android · iOS</div>
+    <h1>Sahil Altın Avcısı Gizlilik Politikası</h1>
+    <div class="meta">Son güncelleme: 29 Eylül 2026 · Geliştirici: Burak383</div>
+  </header>
+
+  <div class="tabs" role="tablist">
+    <button id="tab-tr" role="tab" aria-selected="true" aria-controls="tr">Türkçe</button>
+    <button id="tab-en" role="tab" aria-selected="false" aria-controls="en">English</button>
+  </div>
+
+  <section id="tr" role="tabpanel" aria-labelledby="tab-tr">
+    <p>Bu politika, <strong>Sahil Altın Avcısı</strong> mobil oyununun ("Oyun") hangi verileri topladığını, neden topladığını ve nasıl kullandığını açıklar. Oyunda hesap açmanız gerekmez; adınızı, e-posta adresinizi veya konumunuzu biz toplamayız.</p>
+
+    <h2>Cihazınızda saklanan veriler</h2>
+    <p>Oyun ilerlemeniz (para, seviye, eşyalar, ayarlar) yalnızca cihazınızda saklanır ve sunucularımıza gönderilmez. Oyunu silerseniz bu veriler de silinir.</p>
+
+    <h2>Üçüncü taraf hizmetler</h2>
+    <p>Oyun aşağıdaki Google hizmetlerini kullanır. Bu hizmetler kendi gizlilik politikalarına göre bazı cihaz verilerini işleyebilir.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Hizmet</th><th>Amaç</th><th>İşlenebilen veriler</th></tr></thead>
+        <tbody>
+          <tr><td>Google AdMob</td><td>Reklam göstermek (ödüllü ve geçiş reklamları)</td><td>Reklam kimliği, cihaz modeli, IP adresi, yaklaşık konum</td></tr>
+          <tr><td>Firebase Analytics</td><td>Oyunun nasıl oynandığını anonim olarak anlamak</td><td>Uygulama örnek kimliği, oyun içi olaylar (seviye atlama, seyahat), cihaz bilgisi</td></tr>
+          <tr><td>Firebase Crashlytics</td><td>Çökmeleri bulup düzeltmek</td><td>Çökme kayıtları, cihaz ve işletim sistemi bilgisi</td></tr>
+          <tr><td>Google Play Oyun Hizmetleri</td><td>Başarımlar ve liderlik tablosu</td><td>Play Games profiliniz ve skorlarınız</td></tr>
+          <tr><td>Google Play Faturalandırma</td><td>Uygulama içi satın almalar</td><td>Ödeme bilgilerinizi Google işler; biz göremeyiz</td></tr>
+          <tr><td>Apple App Store (iOS)</td><td>Uygulama içi satın almalar</td><td>Ödeme bilgilerinizi Apple işler; biz göremeyiz</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Google'ın gizlilik politikası: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+
+    <h2>Reklam tercihleri</h2>
+    <p>Kişiselleştirilmiş reklamları cihazınızın <em>Ayarlar › Google › Reklamlar</em> bölümünden kapatabilir veya reklam kimliğinizi sıfırlayabilirsiniz.</p>
+
+    <h2>Çocuklar</h2>
+    <p>Oyun 13 yaş altındaki çocuklara yönelik değildir ve bu yaş grubundan bilerek kişisel veri toplamaz.</p>
+
+    <h2>Değişiklikler</h2>
+    <p>Bu politika güncellenirse yeni sürüm bu sayfada, güncelleme tarihiyle birlikte yayınlanır.</p>
+
+    <h2>İletişim</h2>
+    <div class="contact">Sorularınız için: <code>seolen8@gmail.com</code></div>
+  </section>
+
+  <section id="en" role="tabpanel" aria-labelledby="tab-en" hidden>
+    <p>This policy explains what data the <strong>Sahil Altın Avcısı</strong> (Beach Gold Hunter) mobile game ("the Game") collects, why, and how it is used. The Game needs no account; we do not collect your name, email address or location.</p>
+
+    <h2>Data stored on your device</h2>
+    <p>Your game progress (money, level, items, settings) is stored only on your device and is never sent to our servers. Uninstalling the Game deletes it.</p>
+
+    <h2>Third-party services</h2>
+    <p>The Game uses the following Google services, which may process some device data under their own privacy policies.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Service</th><th>Purpose</th><th>Data that may be processed</th></tr></thead>
+        <tbody>
+          <tr><td>Google AdMob</td><td>Showing ads (rewarded and interstitial)</td><td>Advertising ID, device model, IP address, approximate location</td></tr>
+          <tr><td>Firebase Analytics</td><td>Understanding gameplay anonymously</td><td>App instance ID, in-game events (level up, travel), device info</td></tr>
+          <tr><td>Firebase Crashlytics</td><td>Finding and fixing crashes</td><td>Crash logs, device and OS info</td></tr>
+          <tr><td>Google Play Games Services</td><td>Achievements and leaderboards</td><td>Your Play Games profile and scores</td></tr>
+          <tr><td>Google Play Billing</td><td>In-app purchases</td><td>Payment details are handled by Google; we never see them</td></tr>
+          <tr><td>Apple App Store (iOS)</td><td>In-app purchases</td><td>Payment details are handled by Apple; we never see them</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+
+    <h2>Ad preferences</h2>
+    <p>You can opt out of personalized ads or reset your advertising ID in your device's <em>Settings › Google › Ads</em>.</p>
+
+    <h2>Children</h2>
+    <p>The Game is not directed at children under 13 and does not knowingly collect personal data from them.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version will be posted on this page with its update date.</p>
+
+    <h2>Contact</h2>
+    <div class="contact">Questions: <code>seolen8@gmail.com</code></div>
+  </section>
+</div>
+
+<script>
+const tabs = { tr: document.getElementById('tab-tr'), en: document.getElementById('tab-en') };
+function show(lang) {
+  for (const k of Object.keys(tabs)) {
+    tabs[k].setAttribute('aria-selected', String(k === lang));
+    document.getElementById(k).hidden = k !== lang;
+  }
+}
+tabs.tr.addEventListener('click', () => show('tr'));
+tabs.en.addEventListener('click', () => show('en'));
+if (location.hash === '#en') show('en');
+</script>
+
+</body>
+</html>
